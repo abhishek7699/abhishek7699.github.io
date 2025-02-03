@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: navy;
+    text-align: center;
+}
+
+
+.centered {
+    text-align: center;
+    font-size: 2em;
+    color: darkred;
+}
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border: 5px solid rgb(235, 28, 1);
+    background-color: green;
+}
+
+
+.intro, .education {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.intro {
+    background-color: lightblue;
+    color: darkblue;
+}
+
+
+.education {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+
+
+h1, h2 {
+    color: white;
+}
+
+p, li {
+    font-size: 1.1em;
+}
