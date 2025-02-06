@@ -5,14 +5,14 @@ body {
     text-align: center;
 }
 
-
+/* Content of the page*/
 .centered {
     text-align: center;
     font-size: 2em;
     color: darkred;
 }
 
-
+/*Border and Box fot the container */
 .container {
     width: 80%;
     margin: auto;
@@ -22,30 +22,30 @@ body {
 }
 
 
-.intro, .education {
+.Introduction, .education {
     width: 70%;
     margin: 20px auto;
     padding: 20px;
     border-radius: 10px;
 }
 
-
-.intro {
+/*Styling introduction */
+.Introduction {
     background-color: lightblue;
     color: darkblue;
 }
 
-
+/* Styling Education*/
 .education {
     background-color: lightgreen;
     color: darkgreen;
 }
 
-
+/*Headings font color */
 h1, h2 {
     color: white;
 }
-
+/* content font style*/
 p, li {
     font-size: 1.1em;
 }
