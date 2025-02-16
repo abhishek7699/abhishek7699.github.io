@@ -1,6 +1,11 @@
 /* Flexbox Part 1 */
 
 #flex-section1 ul {
+	display: flex; /* Enables flexbox */
+    justify-content: space-evenly; /* Spaces buttons evenly */
+    list-style: none; /* Removes bullet points */
+    padding: 0;
+
 
 }
 
@@ -10,22 +15,30 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
+	display: flex; /* Enables flexbox */
+    justify-content: space-between; /* Distributes columns evenly */
+    list-style: none;
+    padding: 0;
 
 }
 
 #flex-section2 li {
+	flex: 1; 
 
 }
 
 #flex-section2 .item1 {
+	order: 1; 
 
 }
 
 #flex-section2 .item2 {
+	order: 3; 
 
 }
 
 #flex-section2 .item3 {
+	order: 2;
 
 }
 
@@ -35,10 +48,24 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
+	display: flex;
+    justify-content: center; /* Centers the card horizontally */
+    align-items: center; /* Centers the card vertically */
+    height: 50%;
 
 }
 
 #flex-section3 .tags ul {
+	display: flex;
+    gap: 3px; /* Adds spacing between tags */
+    padding: 10px;
+    list-style: none;
+    flex-wrap: wrap; /* Allows wrapping of tags */
+    align-items: center; /* Ensures horizontal alignment of tags */
+    background-color: #fdfdfd; /* Adds background for tag effect */
+    border-radius: 5px; /* Rounds corners */
+    max-width: 900%; /* Keeps tags within container */
+    margin: auto; 
 
 }
 
@@ -48,6 +75,10 @@
 /* Grid Part 1 */
 
 #grid-section1 .grid {
+	display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
+    gap: 20px; /* Adds space between rows and columns */
+    grid-auto-rows: 100px; 
 
 }
 
@@ -57,10 +88,21 @@
 /* Grid Part 2 */
 
 #grid-section2 .gridboxblue {
+	grid-column: 2 / 4; /* Spans two columns */
+    grid-row: 1 / 3; /* Takes up two rows */
+    position: relative;
+    z-index: 2; /* Places the blue box above */
+    height: 380px 
 
 }
 
 #grid-section2 .gridboxred {
+	grid-column: 1 / 3; /* Spans two columns */
+    grid-row: 2/ 4; /* Moves it below blue */
+    position: relative;
+    z-index: 1; /* Keeps red below blue */
+    height: 120px;
+	
 
 }
 
@@ -70,22 +112,32 @@
 /* Grid Part 3 */
 
 #grid-section3 .grid {
+	display: grid;
+    grid-template-columns: 2fr 1fr; /* First column twice the width */
+    grid-template-rows: 100px 300px 100px; /* Defines row heights */
+    gap: 10px; 
 
 }
 
 #grid-section3 .box1 {
+	grid-column: span 2; /* Spans both columns */
 
 }
 
 #grid-section3 .box2 {
+	grid-column: 1 / 2;
+    grid-row: 2 / 3;
 
 }
 
 #grid-section3 .box3 {
+	grid-column: 2 / 3;
+    grid-row: 2 / 3;
 
 }
 
 #grid-section3 .box4 {
+	grid-column: span 2; 
 
 }
 
@@ -96,18 +148,20 @@
 
 #transition-section .box a {
 	display: inline-block;
-	background-color: #ccc;
-	color: #000;
-	padding: 20px;
-	text-decoration: none;
-
-
+    background-color: #ccc;
+    color: #000;
+    padding: 20px;
+    text-decoration: none;
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
+
+
+
 
 #transition-section .box a:hover {
 	background-color: #cc0000;
-	color: #fff;
-
+    color: #fff;
+    transition: background-color 3s ease, color 3s ease;
 
 }
 
