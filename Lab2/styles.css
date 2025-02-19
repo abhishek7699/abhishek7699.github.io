@@ -1,9 +1,9 @@
 /* Flexbox Part 1 */
 
 #flex-section1 ul {
-	display: flex; /* Enables flexbox */
-    justify-content: space-evenly; /* Spaces buttons evenly */
-    list-style: none; /* Removes bullet points */
+	display: flex; 
+    justify-content: space-evenly; /* places buttons evenly */
+    list-style: none; /* Removes bullet point */
     padding: 0;
 
 
@@ -15,8 +15,8 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
-	display: flex; /* Enables flexbox */
-    justify-content: space-between; /* Distributes columns evenly */
+	display: flex; /* Enables    the   flexbox */
+    justify-content: space-between; /* Distributes the enitre columns evenly */
     list-style: none;
     padding: 0;
 
@@ -57,14 +57,14 @@
 
 #flex-section3 .tags ul {
 	display: flex;
-    gap: 3px; /* Adds spacing between tags */
+    gap: 3px; 
     padding: 10px;
     list-style: none;
-    flex-wrap: wrap; /* Allows wrapping of tags */
-    align-items: center; /* Ensures horizontal alignment of tags */
-    background-color: #fdfdfd; /* Adds background for tag effect */
-    border-radius: 5px; /* Rounds corners */
-    max-width: 900%; /* Keeps tags within container */
+    flex-wrap: wrap; 
+    align-items: center;
+    background-color: #fdfdfd; 
+    border-radius: 5px; 
+    max-width: 900%; 
     margin: auto; 
 
 }
@@ -76,8 +76,8 @@
 
 #grid-section1 .grid {
 	display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Creates 4 equal columns */
-    gap: 20px; /* Adds space between rows and columns */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
     grid-auto-rows: 100px; 
 
 }
