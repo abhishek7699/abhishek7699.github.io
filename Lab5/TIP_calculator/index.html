@@ -11,7 +11,7 @@
 <body>
 
     <div class="box-container">
-        <p>ITMD 541. lab-5. Tip calculator</p>
+                    <p>.      ITMD 541. lab-5. Tip calculator</p>
             <h1><b>Tip Calculator</b></h1>
                 <br>
                 <p>Currency conversion:<br><br> $1 USD = €0.95 EUR for EUROS<br> <br>$1 =  ₹85 INR for Rupees</p><br>
@@ -59,7 +59,7 @@
         const tipValue = document.getElementById("Tip_value");
       
         tipSlider.addEventListener("input", () => {
-          tipValue.textContent = tipSlider.value;
+          tipValue.textContent = (tipSlider.value)+"%";
       
           
           tipValue.classList.add("animate-tip");
@@ -69,6 +69,8 @@
             tipValue.classList.remove("animate-tip");
           }, 300);
         });
+
+        
       </script>
       <script src="app.js"></script>
     
