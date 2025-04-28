@@ -7,15 +7,13 @@
        
     </title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
 </head>
 <body>
 
-<img src="https://img.icons8.com/fluency/96/calculator.png" alt="Top Right Icon" class="top-right-icon">
-
-<img src="Screenshot 2025-04-16 at 7.13.11 PM.png" alt="Top Right Icon" class="left-right-icon">
 
     <div class="page-layout">
+      <div class="mainbox">
         <!--Box-container-->
       <div class="box-container">
                     <h5>          ITMD 541 lab-5 Tip calculator</h5>
@@ -47,6 +45,12 @@
             <br>
             <label for="tip">Tip: </label>
             <input type="range" id="tip" name="Tip" min="0" max="100" step="1" value="0"><span id="Tip_value">0</span><br>
+            <label for="converted">Converted Tip Amount: </label>
+            <input type="text" placeholder="0.00" id="converted" name="converted" disabled><br>
+            <br>
+            <label for="converted_tax">Converted Bill with Tip and Tax: </label>
+            <input type="text" placeholder="0.00" id="converted_tax" name="converted_tax" disabled>
+
             
          </form>
 
@@ -66,6 +70,7 @@
 
       </div>
     </div>
+  </div>
 
     <script>
         const tipSlider = document.getElementById("tip");
@@ -82,6 +87,7 @@
             tipValue.classList.remove("animate-tip");
           }, 300);
         });
+        
 
         
       </script>
