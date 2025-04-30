@@ -28,8 +28,8 @@ const time_zone1=document.querySelector("#timezone1");
 let lat=0
 let lng=0
 // getting today's date
-const date = new Date().toISOString().split('T')[0];
-console.log(date);
+const today = new Date().toISOString().split('T')[0];
+console.log(today);
 
 // getting tommorow's date
 const tomorrowDate = new Date();
@@ -39,8 +39,8 @@ console.log(tomorrow);
 
 
 //function to find the current location
-function location3() {
-    city.value="NULL"
+function current_location() {
+    city.value="none"
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
     } else {
@@ -62,8 +62,8 @@ function location3() {
   }
 
 
-  // fucntion to find lattitude and longitute of the palce using API
-  function location2(city){
+  // function to find lattitude and longitute of the palce using API
+  function latitude_longitute_finder(city){
 
     if(city==="none"){
         lat=NaN;
@@ -100,7 +100,7 @@ function location3() {
 
     // getting data for today
     try {
-      const responseToday = await fetch(`https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&timezone=${timezone}&date=${date}`);
+      const responseToday = await fetch(`https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&timezone=${timezone}&date=${today}`);
       const dataToday = await responseToday.json();
       console.log(dataToday);
   
@@ -144,8 +144,8 @@ function location3() {
 
 
 // event listeners  for list and current button
-city.addEventListener("input",()=>location2(city.value));
-bttn.addEventListener("click",location3);
+city.addEventListener("input",()=>latitude_longitute_finder(city.value));
+bttn.addEventListener("click",current_location);
 
 
 
