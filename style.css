@@ -110,7 +110,7 @@ button:hover {
     border-radius: 1rem;
     text-align: center;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    width: 100px; /* smaller width to fit more cards */
+    width: 140px; /* smaller width to fit more cards */
     height: 80px;
     display: flex;
     flex-direction: column;
