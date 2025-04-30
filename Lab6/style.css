@@ -21,7 +21,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 20%;
+  height: 100%;
 }
 
 /* Header section */
@@ -49,7 +49,7 @@ header h1 {
 
 form {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 1rem;
   flex-wrap: wrap;
 }
@@ -62,6 +62,7 @@ select {
 }
 
 button {
+    
   padding: 0.5rem 1rem;
   background-color: #667eea;
   color: white;
@@ -87,7 +88,7 @@ button:hover {
 }
 
 .today h2, .tomorrow h2 {
-  text-align: center;
+  text-align: left;
   font-size: 1.5rem;
   color: white; /* updated text color */
 }
@@ -96,7 +97,7 @@ button:hover {
 .cards-container {
   margin-top: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: ledtz;
   flex-wrap: wrap;
   gap: 1.5rem;
   max-width: 900px;

@@ -1,6 +1,13 @@
+//ITMD 541 
+//Sai Abhishek Yeluri
+//app.js
+
+
+// Document object created for list and button
 const city=document.querySelector("#City");
 const bttn=document.querySelector("#bttn");
 
+//document object for placing values of sunrise sunset dawn dusk day lenght solar noon and timezone
 const sunrise=document.querySelector("#sunrise");
 const sunset=document.querySelector("#sunset");
 const dusk=document.querySelector("#dusk");
@@ -20,15 +27,18 @@ const time_zone1=document.querySelector("#timezone1");
 
 let lat=0
 let lng=0
+// getting today's date
 const date = new Date().toISOString().split('T')[0];
 console.log(date);
 
-
+// getting tommorow's date
 const tomorrowDate = new Date();
 tomorrowDate.setDate(tomorrowDate.getDate() + 1);
 const tomorrow = tomorrowDate.toISOString().split('T')[0];
 console.log(tomorrow);
 
+
+//function to find the current location
 function location3() {
     city.value="NULL"
     if (navigator.geolocation) {
@@ -51,6 +61,8 @@ function location3() {
     alert("Unable to retrieve your location.");
   }
 
+
+  // fucntion to find lattitude and longitute of the palce using API
   function location2(city){
 
     if(city==="none"){
@@ -80,11 +92,13 @@ function location3() {
     }
   }
 
-
+// function to retrevie data form the specified location
   async function API_retrevial(lat, lng, timezone) {
     let value = city.value;
     console.log(city.value);
   
+
+    // getting data for today
     try {
       const responseToday = await fetch(`https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&timezone=${timezone}&date=${date}`);
       const dataToday = await responseToday.json();
@@ -102,6 +116,7 @@ function location3() {
       alert("Failed to load today's sunrise/sunset data.");
     }
   
+    // getting data for tommowrow
     try {
       const responseTomorrow = await fetch(`https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}&timezone=${timezone}&date=${tomorrow}`);
       const dataTomorrow = await responseTomorrow.json();
@@ -128,7 +143,7 @@ function location3() {
 
 
 
-
+// event listeners  for list and current button
 city.addEventListener("input",()=>location2(city.value));
 bttn.addEventListener("click",location3);
 
