@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #667eea, #764ba2);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+/* Container */
+.container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  max-width: 10000px;
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20%;
+}
+
+/* Header section */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+header h2 {
+  font-size: 1rem;
+  color: #6b7280;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+/* Form section */
+.form-box {
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #667eea;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #5a67d8;
+}
+
+/* Today and Tomorrow Sections */
+.today, .tomorrow {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+  padding: 1rem;
+  background: linear-gradient(to right, #7b4397, #dc2430); /* updated background */
+  color: white;
+  border: none; /* remove black border */
+}
+
+.today h2, .tomorrow h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white; /* updated text color */
+}
+
+/* Cards Section */
+.cards-container {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 900px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 1.5rem 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100px; /* smaller width to fit more cards */
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    transition: transform 0.2s ease;
+  }
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .material-symbols-outlined {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1rem;
+  color: #222;
+  font-weight: 500;
+}
+
+/* Optional date heading */
+.today-date {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  margin-top: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .cards-container {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .card {
+    width: 140px;
+    height: auto;
+    flex-shrink: 0;
+    margin-right: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sunrise & Sunset Info</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+  
+      <header>
+        <h2>ITMD 541 - Lab 6</h2>
+        <h1>Sunrise & Sunset Info</h1>
+      </header>
+  
+      <div class="form-box">
+        <form>
+          <label for="City">Select a City:</label>
+          <select id="City" name="City">
+            <option value="none">Select a City</option>
+            <option value="Hyderabad">Hyderabd, IN</option>
+            <option value="New York">New York, NY</option>
+            <option value="Los Angeles">Los Angeles, CA</option>
+            <option value="Paris">Paris, FRAC</option>
+            <option value="Tokyo">Tokyo, JP</option>
+            <option value="Bejing">Bejing,CHN</option>
+            <option value="Moscow">Moscow, RU</option>
+            <option value="London">London,UK </option>
+            <option value="Istanbul">Istanbul, TU</option>
+            <option value="Delhi">Delhi, IN</option>
+            <option value="Sydney">Sydney, AUS</option>
+            <option value="Bangkok">Bangkok, Thailand</option>
+          <option value="Dubai">Dubai, United Arab Emirates</option>
+          <option value="Berlin">Berlin, Germany</option>
+          <option value="Singapore">Singapore, Singapore</option>
+          <option value="Auckland">Auckland, New Zealand</option>
+            
+
+          </select>
+          <button type="button" id="bttn">Use Current Location</button>
+        </form>
+      </div>
+  
+      <section class="today">
+        <h2>Today</h2>
+        <div class="cards-container">
+            <div class="card">
+                <span class="material-symbols-outlined">wb_sunny</span>
+                <p>Sunrise:</p>
+                <p id="sunrise"></p>
+              </div>
+              
+              <div class="card">
+                <span class="material-symbols-outlined">dark_mode</span>
+                <p>Sunset: </p>
+                <p  id="sunset"></p>
+              </div>
+              
+              <div class="card">
+                <span class="material-symbols-outlined">light_mode</span>
+                <p> Dawn:</p>
+                <p id="dawn"> </p>
+              </div>
+              
+              <div class="card">
+                <span class="material-symbols-outlined">nights_stay</span>
+                <p>Dusk:</p>
+                <p id="dusk"></p>
+              </div>
+              
+              <div class="card">
+                <span class="material-symbols-outlined">schedule</span>
+                <p>Day Length</p>
+                <p id="day_length"></p>
+              </div>
+              
+              <div class="card">
+                <span class="material-symbols-outlined">sunny</span>
+                <p>Solar Noon:</p>
+                <p id="solar_noon"></p>
+              </div>
+              
+              <div class="card">
+                <span class="material-symbols-outlined">public</span>
+                <p>Timezone:</p>
+
+                <p id="timezone"> </p>
+              </div>
+       
+        </div>
+      </section>
+  
+
+      <div class="cards-container">
+      <section class="tomorrow">
+        <h2>Tomorrow</h2>
+        
+            
+        <div class="cards-container">
+            <div class="card">
+                <span class="material-symbols-outlined">wb_sunny</span>
+                <p>Sunrise:</p>
+                <p id="sunrise1"></p>
+              </div>
+              
+              <div class="card">
+                <span class="material-symbols-outlined">dark_mode</span>
+                <p>Sunset: </p>
+                <p  id="sunset1"></p>
+              </div>
+              
+              <div class="card">
+                <span class="material-symbols-outlined">light_mode</span>
+                <p> Dawn:</p>
+                <p id="dawn1"> </p>
+              </div>
+              
+              <div class="card">
+                <span class="material-symbols-outlined">nights_stay</span>
+                <p>Dusk:</p>
+                <p id="dusk1"></p>
+              </div>
+              
+              <div class="card">
+                <span class="material-symbols-outlined">schedule</span>
+                <p>Day Length</p>
+                <p id="day_length1"></p>
+              </div>
+              
+              <div class="card">
+                <span class="material-symbols-outlined">sunny</span>
+                <p>Solar Noon:</p>
+                <p id="solar_noon1"></p>
+              </div>
+              
+              <div class="card">
+                <span class="material-symbols-outlined">public</span>
+                <p>Timezone:</p>
+
+                <p id="timezone1"> </p>
+              </div>
+       
+        </div>
+        
+       
+      </section>
+  
+    </div>
+
+    <script src="app.js"></script>
+
+   
+   
+  </body>
+  <footer>
+    <p>Powered by sunrise.io API</p>
+  </footer>
+  
+  
+
+</html>
